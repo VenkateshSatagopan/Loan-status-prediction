@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Loan Prediction</title>
+
+    <!-- link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/"> -->
+
+    <!-- Bootstrap core CSS -->
+   <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+   <link  href="../static/css/custom-style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/form_predict.css" rel="stylesheet"> 
+
+    </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Loan sanction predictor</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Inputs</h4>
+          <form class="predictor-inputs" method='post'>
+            <div class="mb-3">
+              <label for="Gender">Sex</label>
+              <select class="custom-select d-block w-50" name="Gender" id="Gender" required>
+                  <option value="">Choose...</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>nan</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid category.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="Married">Maritial status</label>
+                <select class="custom-select d-block w-50" name="Married" id="Married" required>
+                    <option value="">Choose...</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>nan</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid category.
+                  </div>
+                </div> 
+                <div class="mb-3">
+                  <label for="Dependents">Number of Dependents</label>
+                  <select class="custom-select d-block w-50" name="Dependents" id="Dependents" required>
+                      <option value="">Choose...</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3+</option>
+                      <option>nan</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid category.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Education">Education status</label>
+                    <select class="custom-select d-block w-50" name="Education" id="Education" required>
+                        <option value="">Choose...</option>
+                        <option>Graduate</option>
+                        <option>Not Graduate</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid category.
+                      </div>
+                    </div>    
+                    <div class="mb-3">
+                      <label for="Self-Employed">Self Employed status</label>
+                      <select class="custom-select d-block w-50" name="Self_Employed" id="Self_Employed" required>
+                          <option value="">Choose...</option>
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>nan</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid category.
+                        </div>
+                      </div> 
+
+            <div class="mb-4">
+                <label for="ApplicantIncome"> Applicant Income</label>
+                <input type="number"  class="form-control" style="width:50%" min="0" step="0.5" name="ApplicantIncome" id="ApplicantIncome" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid Income is required.
+                </div>
+              </div>
+            
+              <div class="mb-4">
+                <label for="CoapplicantIncome"> Coapplicant Income</label>
+                <input type="number"  min="0" step="0.5" class="form-control" style="width:50%" name="CoapplicantIncome" id="CoapplicantIncome" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid Income is required.
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="LoanAmount"> Loan Amount</label>
+                <input type="number"  min="0" step="0.5" class="form-control" style="width:50%" name="LoanAmount" id="LoanAmount" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid Loan amount is required.
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="Loan_Amount_Term"> Loan_Amount_Term (Days in which loan be repaid)</label>
+                <input type="any"  min="0" step="0.5" class="form-control" style="width:50%" name="Loan_Amount_Term" id="Loan_Amount_Term" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid Laon amount term is required.
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="Credit_History">Credit_History (Borrower repayment history 1- has all debts paid, 0- not paid)</label>
+                <select class="custom-select d-block w-50" name="Credit_History" id="Credit_History" required>
+                    <option value="">Choose...</option>
+                    <option>1.0</option>
+                    <option>0.0</option>
+                    <option>nan</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid category.
+                  </div>
+                </div> 
+
+                <div class="mb-3">
+                  <label for="Property_Area">Area where property is located </label>
+                  <select class="custom-select d-block w-50" name="Property_Area" id="Property_Area" required>
+                      <option value="">Choose...</option>
+                      <option>Semiurban</option>
+                      <option>Urban</option>
+                      <option>Rural</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid category.
+                    </div>
+                  </div> 
+            
+            <hr class="mb-5">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Predict</button>
+            <br>
+          <br>
+          {{ prediction }}
+          </form>
+          
+        </div>
+      </div>
+
+     
+    </div>
+
+  </body>
+</html>
