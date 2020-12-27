@@ -2,9 +2,15 @@ from flask import Flask, render_template,request,jsonify
 import pandas as pd
 import pickle
 import numpy as np
-from pycaret.classification import *
+import joblib
+import pandas as pd
+import joblib
+import catboost
+from sklearn.ensemble import RandomForestClassifier, VotingClassifier,GradientBoostingClassifier,ExtraTreesClassifier
+import xgboost
 
-model=load_model('best-model-loan-prediction')
+
+model=joblib.load('best-model-loan-prediction.pkl')
 
 app=Flask(__name__)
 
@@ -15,8 +21,23 @@ def get_details():
     if request.method=='POST':
         d = request.form.to_dict()
         df = pd.DataFrame([d.values()], columns=d.keys())
-        prediction_val=predict_model(model, data=df, round = 0)
-        prediction_val=int(prediction_val.Label[0])
+        #df['Unnamed: 0']=-1
+        #print(df.info())
+        df['Gender']=df['Gender'].astype('str')
+        df['Married']=df['Married'].astype('str')
+        df['Dependents']=df['Dependents'].astype('str')
+        df['Education']=df['Education'].astype('str')
+        df['Self_Employed']=df['Self_Employed'].astype('str')
+        df['ApplicantIncome']=df['ApplicantIncome'].astype('float64')
+        df['CoapplicantIncome']=df['CoapplicantIncome'].astype('float64')
+        df['LoanAmount']=df['LoanAmount'].astype('float64')
+        df['Loan_Amount_Term']=df['Loan_Amount_Term'].astype('float64')
+        df['Credit_History']=df['Credit_History'].astype('float64')
+        df['Property_Area']=df['Property_Area'].astype('str')
+        #print(df)
+        prediction_val=model.predict(df)
+        #print(prediction_val)
+        prediction_val=int(prediction_val)
         if prediction_val==0:
             prediction='rejected'
         else:
@@ -33,9 +54,13 @@ def predict_api():
     '''
     data = request.get_json(force=True)
     data_unseen = pd.DataFrame([data])
-    prediction = predict_model(model, data=data_unseen)
-    output = prediction.Label[0]
-    return jsonify(output)
+    prediction_val = int(model.predict(data_unseen))
+    if prediction_val==0:
+        prediction='rejected'
+    else:
+        prediction='approved'
+    
+    return jsonify('The model predicts that the loan will be {}'.format(prediction))
     
     
 if __name__=='__main__':
