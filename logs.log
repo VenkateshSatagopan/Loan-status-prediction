@@ -1,0 +1,572 @@
+2020-12-27 06:41:22,958:INFO:Initializing load_model()
+2020-12-27 06:41:22,959:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 06:41:31,002:INFO:Initializing load_model()
+2020-12-27 06:41:31,002:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 06:42:48,517:INFO:Initializing predict_model()
+2020-12-27 06:42:48,517:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                f...
+                                                                                 min_samples_split=9,
+                                                                                 n_estimators=150,
+                                                                                 random_state=7293)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(bootstrap=True,
+                                                                           class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=2,
+                                                                           max_features=1.0,
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=9,
+                                                                           n_estimators=280,
+                                                                           n_jobs=-1,
+                                                                           random_state=7293))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 06:42:48,517:INFO:Checking exceptions
+2020-12-27 06:42:48,517:INFO:Preloading libraries
+2020-12-27 06:43:37,989:INFO:Initializing load_model()
+2020-12-27 06:43:37,989:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 06:43:42,310:INFO:Initializing load_model()
+2020-12-27 06:43:42,310:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 06:43:47,048:INFO:Initializing predict_model()
+2020-12-27 06:43:47,048:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 06:43:47,048:INFO:Checking exceptions
+2020-12-27 06:43:47,048:INFO:Preloading libraries
+2020-12-27 06:44:36,913:INFO:Initializing predict_model()
+2020-12-27 06:44:36,913:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 06:44:36,913:INFO:Checking exceptions
+2020-12-27 06:44:36,913:INFO:Preloading libraries
+2020-12-27 07:09:25,194:INFO:Initializing load_model()
+2020-12-27 07:09:25,195:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:09:32,775:INFO:Initializing load_model()
+2020-12-27 07:09:32,776:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:12:39,467:INFO:Initializing load_model()
+2020-12-27 07:12:39,467:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:12:42,992:INFO:Initializing load_model()
+2020-12-27 07:12:42,992:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:14:08,902:INFO:Initializing load_model()
+2020-12-27 07:14:08,902:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:14:14,163:INFO:Initializing load_model()
+2020-12-27 07:14:14,164:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:46:36,551:INFO:Initializing load_model()
+2020-12-27 07:46:36,552:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:46:41,138:INFO:Initializing load_model()
+2020-12-27 07:46:41,139:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:50:32,935:INFO:Initializing load_model()
+2020-12-27 07:50:32,935:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:50:36,294:INFO:Initializing load_model()
+2020-12-27 07:50:36,294:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:54:19,316:INFO:Initializing load_model()
+2020-12-27 07:54:19,317:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:54:23,024:INFO:Initializing load_model()
+2020-12-27 07:54:23,025:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:58:30,975:INFO:Initializing load_model()
+2020-12-27 07:58:30,976:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 07:58:34,267:INFO:Initializing load_model()
+2020-12-27 07:58:34,267:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 08:02:18,404:INFO:Initializing predict_model()
+2020-12-27 08:02:18,404:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 08:02:18,405:INFO:Checking exceptions
+2020-12-27 08:02:18,405:INFO:Preloading libraries
+2020-12-27 08:44:46,243:INFO:Initializing load_model()
+2020-12-27 08:44:46,243:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 08:44:51,463:INFO:Initializing load_model()
+2020-12-27 08:44:51,464:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 08:45:35,243:INFO:Initializing predict_model()
+2020-12-27 08:45:35,243:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 08:45:35,243:INFO:Checking exceptions
+2020-12-27 08:45:35,243:INFO:Preloading libraries
+2020-12-27 08:52:31,211:INFO:Initializing predict_model()
+2020-12-27 08:52:31,212:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 08:52:31,213:INFO:Checking exceptions
+2020-12-27 08:52:31,213:INFO:Preloading libraries
+2020-12-27 08:55:17,450:INFO:Initializing predict_model()
+2020-12-27 08:55:17,450:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 08:55:17,451:INFO:Checking exceptions
+2020-12-27 08:55:17,451:INFO:Preloading libraries
+2020-12-27 08:57:07,156:INFO:Initializing predict_model()
+2020-12-27 08:57:07,156:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 08:57:07,156:INFO:Checking exceptions
+2020-12-27 08:57:07,156:INFO:Preloading libraries
+2020-12-27 08:58:59,421:INFO:Initializing predict_model()
+2020-12-27 08:58:59,421:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 08:58:59,422:INFO:Checking exceptions
+2020-12-27 08:58:59,422:INFO:Preloading libraries
+2020-12-27 08:59:43,180:INFO:Initializing predict_model()
+2020-12-27 08:59:43,180:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 08:59:43,180:INFO:Checking exceptions
+2020-12-27 08:59:43,180:INFO:Preloading libraries
+2020-12-27 09:00:05,783:INFO:Initializing load_model()
+2020-12-27 09:00:05,783:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 09:00:32,533:INFO:Initializing predict_model()
+2020-12-27 09:00:32,533:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 09:00:32,533:INFO:Checking exceptions
+2020-12-27 09:00:32,534:INFO:Preloading libraries
+2020-12-27 09:01:08,553:INFO:Initializing predict_model()
+2020-12-27 09:01:08,553:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 09:01:08,554:INFO:Checking exceptions
+2020-12-27 09:01:08,554:INFO:Preloading libraries
+2020-12-27 09:02:01,124:INFO:Initializing predict_model()
+2020-12-27 09:02:01,124:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 09:02:01,124:INFO:Checking exceptions
+2020-12-27 09:02:01,124:INFO:Preloading libraries
+2020-12-27 09:11:29,510:INFO:Initializing load_model()
+2020-12-27 09:11:29,510:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 09:11:32,600:INFO:Initializing load_model()
+2020-12-27 09:11:32,600:INFO:load_model(model_name=best-model-loan-prediction, platform=None, authentication=None, verbose=True)
+2020-12-27 09:11:47,272:INFO:Initializing predict_model()
+2020-12-27 09:11:47,272:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 09:11:47,272:INFO:Checking exceptions
+2020-12-27 09:11:47,272:INFO:Preloading libraries
+2020-12-27 09:12:31,212:INFO:Initializing predict_model()
+2020-12-27 09:12:31,213:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Gender', 'Married',
+                                                            'Dependents',
+                                                            'Education',
+                                                            'Self_Employed',
+                                                            'Loan_Amount_Term',
+                                                            'Credit_History',
+                                                            'Property_Area'],
+                                      features_todrop=['Loan_ID', 'Unnamed: 0'],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='classification',
+                                      target='Loan_Status')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_...
+                                                                                 min_samples_split=4,
+                                                                                 n_estimators=70,
+                                                                                 random_state=2866,
+                                                                                 subsample=0.35)),
+                                                     ('et',
+                                                      ExtraTreesClassifier(class_weight={},
+                                                                           criterion='entropy',
+                                                                           max_depth=4,
+                                                                           max_features='sqrt',
+                                                                           min_impurity_decrease=0.1,
+                                                                           min_samples_leaf=2,
+                                                                           min_samples_split=7,
+                                                                           n_estimators=20,
+                                                                           n_jobs=-1,
+                                                                           random_state=2866))],
+                                         n_jobs=-1, weight_0=1, weight_1=1,
+                                         weight_2=1, weight_3=1, weight_4=1,
+                                         weights=[1, 1, 1, 1, 1])]]), probability_threshold=None, encoded_labels=False, round=0, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-27 09:12:31,213:INFO:Checking exceptions
+2020-12-27 09:12:31,213:INFO:Preloading libraries
